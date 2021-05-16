@@ -5,13 +5,8 @@ pipeline {
                   stage('test') {
                     steps {
                       print("Testing application")
-            }
-        }
-      stage('main') {
-            steps {
-                print("Deploying the application")
-            }
+                    }
+                  }
         }
     }
-}
 }
