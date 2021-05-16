@@ -2,11 +2,19 @@ pipeline {
     agent  any  
     stages {
         stage('test') {
-                  stage('test1') {
-                    steps {
-                      print("Testing application")
-                    }
-                  }
+            steps {
+                print("Building application")
+            }
+        }
+      stage('Dev') {
+            steps {
+                print("Testing application")
+            }
+        }
+      stage('feature-tags') {
+            steps {
+                print("Deploying the application")
+            }
         }
     }
 }
